@@ -9,8 +9,10 @@ export const useCatsHooks = () => {
   const [error, setError] = React.useState(null);
 
   const fetchCats = async () => {
+    setLoading(true);
     const cats = await getCats(10);
     setCats(cats);
+    setLoading(false);
   };
 
   React.useEffect(() => {
