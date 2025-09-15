@@ -1,7 +1,11 @@
 import React from "react";
 import { View, Text, ActivityIndicator, StyleSheet } from "react-native";
-import { useCatsHooks } from "../hooks/useCatsHooks";
+
 import CatCard from "../components/CatCard";
+import DecisionButtons from "../components/DecisionButtons";
+
+import { useCatsHooks } from "../hooks/useCatsHooks";
+
 const Cats = () => {
   const { cats, loading, error } = useCatsHooks();
 
@@ -9,13 +13,10 @@ const Cats = () => {
     return <ActivityIndicator />;
   }
 
-  if (error) {
-    return <Text>Error: {error}</Text>;
-  }
-
   return (
     <View style={styles.container}>
       {cats.length > 0 && <CatCard cat={cats[0]} />}
+      {cats.length > 0 && <DecisionButtons onDislikePress={() => {}} onLikePress={() => {}} />}
     </View>
   );
 };

@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
   },
   secondaryText: {
     fontSize: 8,
-    color: theme.colors.shadow,
+    color: theme.colors.grey,
     fontFamily: theme.fonts.regular,
   },
 });

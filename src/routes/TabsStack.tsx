@@ -64,11 +64,7 @@ const styles = StyleSheet.create({
     borderRadius: theme.borderRadius,
     width: "50%",
     marginHorizontal: theme.screen.width * 0.25,
-    shadowColor: theme.colors.shadow,
-    shadowOffset: { width: 0, height: 10 },
-    shadowOpacity: 0.30,
-    shadowRadius: 3.84,
-    elevation: 5,
+    ...theme.shadow,
   },
   tabBarItem: {
     paddingVertical: 12,

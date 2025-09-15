@@ -4,7 +4,7 @@ const theme = {
   colors: {
     primary: "#EC537E",
     secondary: "#434141",
-    shadow: "#BFBFC0",
+    grey: "#BFBFC0",
     white: "#FFFFFF",
   },
   fonts: {
@@ -22,6 +22,13 @@ const theme = {
   screen: {
     width: Dimensions.get("window").width,
     height: Dimensions.get("window").height,
+  },
+  shadow: {
+    shadowColor: '#BFBFC0',
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.3,
+    shadowRadius: 3.84,
+    elevation: 5,
   },
 
 };
