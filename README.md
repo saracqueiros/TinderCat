@@ -1,7 +1,5 @@
 # 🐱 TinderCat
 
-A delightful React Native app that lets you swipe through adorable cats, Tinder-style! Built with Expo and featuring smooth animations, this app connects to The Cat API to provide an endless stream of feline friends to like or pass on.
-
 ## ✨ Features
 
 - **Smooth Swipe Animations**: Fluid card-based interface with realistic physics
