@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { enableScreens } from 'react-native-screens';
-import TabsStack from './routes/TabsStack';
+import TabsStack from './src/routes/TabsStack';
 import { StatusBar } from "expo-status-bar";
 
 enableScreens(true);
