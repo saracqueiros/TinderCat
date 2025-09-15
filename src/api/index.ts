@@ -7,12 +7,16 @@ export const getCats = async (
   return request<Cat[]>("GET", `/breeds${limit ? `?limit=${limit}` : ""}`);
 };
 
+export type VoteValue = 0 | 1;
+
 export const voteCat = async (
-  catId: string,
-  vote: string,
+  imageId: string,
+  subId: string,
+  value: VoteValue,
 ) => {
   return request<Cat[]>("POST", `/votes`, {
-    catId,
-    vote,
+    image_id: imageId,
+    sub_id: subId,
+    value,
   });
 };

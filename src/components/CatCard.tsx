@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     height: '100%',
     width: '100%',
+    backgroundColor: theme.colors.white,
   },
   image: {
     width: '100%',
