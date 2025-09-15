@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   container: {
     borderRadius: theme.borderRadiusSmall,
     overflow: 'hidden',
-    height: '45%',
+    height: '100%',
     width: '100%',
   },
   image: {
